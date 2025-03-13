@@ -6,13 +6,36 @@
     <title>Den Dolda Sanningen | Truth Matrix</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/redpill.css">
+    <link rel="stylesheet" href="css/redpill-enhanced.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Backup styling for missing images */
+        .logo-container img.logo {
+            display: none;
+        }
+        
+        .logo-container a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .logo-container a::before {
+            content: "\f70a"; /* Pills icon from Font Awesome */
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            font-size: 24px;
+            color: var(--red-pill-secondary);
+            text-shadow: 0 0 5px rgba(120, 0, 0, 0.5);
+        }
+    </style>
 </head>
 <body>
     <div class="overlay"></div>
+    <div class="matrix-animation" id="matrix-animation"></div>
 
     <header class="navbar">
         <div class="logo-container">
@@ -49,7 +72,7 @@
             </div>
             
             <article id="current-article" class="article collapsed">
-                <h2 class="article-title">Laddar artikel...</h2>
+                <h2 class="article-title">Laddar artikel...<span class="truth-cursor"></span></h2>
                 <div class="article-metadata">
                     <p class="publish-date">Publiceringsdatum: <span id="publish-date">--</span></p>
                     <p class="author">Författare: <span id="author">--</span></p>
@@ -60,8 +83,8 @@
                     <!-- Tags will be inserted here -->
                 </div>
                 
-                <div class="article-image-container">
-                    <img id="article-image" src="" alt="Article image" class="article-image">
+                <div class="article-image-container" data-alt="Bild relaterad till artikeln">
+                    <img id="article-image" src="" alt="Article image" class="article-image" onerror="this.parentElement.classList.add('no-image')">
                     <p id="image-caption" class="image-caption"></p>
                 </div>
                 
@@ -165,5 +188,41 @@
     <script src="js/redpill.js"></script>
     <script src="js/comments.js"></script>
     <script src="js/search.js"></script>
+    <script>
+        // Matrix animation effect
+        document.addEventListener('DOMContentLoaded', function() {
+            const matrixAnimation = document.getElementById('matrix-animation');
+            if (!matrixAnimation) return;
+            
+            const width = window.innerWidth;
+            const characters = "01";
+            const columns = Math.floor(width / 20);
+            
+            for (let i = 0; i < columns; i++) {
+                const span = document.createElement('span');
+                span.innerHTML = characters.charAt(Math.floor(Math.random() * characters.length));
+                span.style.left = (i * 20) + 'px';
+                span.style.animationDelay = Math.random() * 5 + 's';
+                span.style.animationDuration = Math.random() * 3 + 2 + 's';
+                matrixAnimation.appendChild(span);
+            }
+            
+            // Fix for the "Read more" button functionality
+            const expandButton = document.getElementById('expand-button');
+            const article = document.getElementById('current-article');
+            
+            if (expandButton && article) {
+                expandButton.addEventListener('click', function() {
+                    article.classList.toggle('expanded');
+                    
+                    if (article.classList.contains('expanded')) {
+                        expandButton.innerHTML = 'Visa mindre <i class="fas fa-angle-up"></i>';
+                    } else {
+                        expandButton.innerHTML = 'Läs mer <i class="fas fa-angle-down"></i>';
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 </html>
