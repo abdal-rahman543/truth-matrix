@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Den Dolda Sanningen | Truth Matrix</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/redpill.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="overlay"></div>
+
+    <header class="navbar">
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Truth Matrix Logo" class="logo">
+                <h1>Truth Matrix</h1>
+            </a>
+        </div>
+        <div class="search-container">
+            <input type="text" id="search-input" class="search-bar" placeholder="Sök efter dolda sanningar...">
+            <div id="search-results" class="search-results"></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="about.html">Om oss</a></li>
+                <li><a href="index.html">Tillbaka till val</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="alert-banner">
+        <p><i class="fas fa-exclamation-triangle"></i> VARNING: Innehållet på denna sida kan vara störande för de som är vana vid officiella narrativ.</p>
+    </div>
+
+    <main>
+        <section class="article-container">
+            <div class="control-buttons">
+                <button id="prev-article" class="control-button">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button id="next-article" class="control-button">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            
+            <article id="current-article" class="article collapsed">
+                <h2 class="article-title">Laddar artikel...</h2>
+                <div class="article-metadata">
+                    <p class="publish-date">Publiceringsdatum: <span id="publish-date">--</span></p>
+                    <p class="author">Författare: <span id="author">--</span></p>
+                    <p class="category">Kategori: <span id="category">--</span></p>
+                </div>
+                
+                <div class="article-tags" id="article-tags">
+                    <!-- Tags will be inserted here -->
+                </div>
+                
+                <div class="article-image-container">
+                    <img id="article-image" src="" alt="Article image" class="article-image">
+                    <p id="image-caption" class="image-caption"></p>
+                </div>
+                
+                <div class="article-introduction">
+                    <p id="article-intro"></p>
+                </div>
+                
+                <div class="article-content collapse-content">
+                    <div class="article-section">
+                        <h3 id="section-1-title"></h3>
+                        <p id="section-1-content"></p>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 id="section-2-title"></h3>
+                        <p id="section-2-content"></p>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 id="section-3-title"></h3>
+                        <p id="section-3-content"></p>
+                    </div>
+                </div>
+                
+                <button id="expand-button" class="expand-button">Läs mer <i class="fas fa-angle-down"></i></button>
+                
+                <div class="article-references collapse-content">
+                    <h3>Källor och referenser</h3>
+                    <ul id="references-list">
+                        <!-- References will be inserted here -->
+                    </ul>
+                </div>
+            </article>
+        </section>
+        
+        <section class="interaction-section">
+            <div class="social-actions">
+                <button class="reaction-button"><i class="fas fa-lightbulb"></i> Upplysande <span id="enlightening-count">0</span></button>
+                <button class="reaction-button"><i class="fas fa-share-alt"></i> Dela sanningen</button>
+                <button class="reaction-button"><i class="fas fa-bookmark"></i> Spara</button>
+            </div>
+            
+            <div class="comment-section">
+                <h3>Diskutera sanningen</h3>
+                <div class="comment-form">
+                    <textarea id="comment-input" placeholder="Dela dina tankar om denna information..."></textarea>
+                    <button id="post-comment" class="post-comment-button">Publicera kommentar</button>
+                </div>
+                
+                <div id="comments-container" class="comments-container">
+                    <!-- Comments will be inserted here -->
+                </div>
+            </div>
+        </section>
+        
+        <section class="related-articles">
+            <h3>Fler dolda sanningar</h3>
+            <div id="related-articles-container" class="related-articles-grid">
+                <!-- Related articles will be inserted here -->
+            </div>
+        </section>
+    </main>
+
+    <div class="newsletter-signup">
+        <div class="newsletter-content">
+            <h3>Få tillgång till ännu djupare sanningar</h3>
+            <p>Prenumerera på vårt nyhetsbrev för att få de mest uppseendeväckande avslöjandena direkt i din inkorg.</p>
+            <form id="newsletter-form">
+                <input type="email" placeholder="Din e-postadress" required>
+                <button type="submit">Prenumerera</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Truth Matrix</h4>
+                <p>Avslöjar sanningarna bakom illusionen sedan 2025.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Navigering</h4>
+                <ul>
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a href="about.html">Om oss</a></li>
+                    <li><a href="bluepill.html">Blå pill</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Disclaimers</h4>
+                <p>Informationen på denna sida är enbart för utbildningssyfte.</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Truth Matrix | Alla rättigheter reserverade</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/articles.js"></script>
+    <script src="js/redpill.js"></script>
+    <script src="js/comments.js"></script>
+    <script src="js/search.js"></script>
+</body>
+</html>
