@@ -1,0 +1,264 @@
+{
+  "articles": [
+    {
+      "id": "flat-earth-truth",
+      "title": "Sanningen Avslöjad: Jorden är Platt och Eliten Vet Det",
+      "author": "Jörgen Peters",
+      "publishDate": "2025-03-02",
+      "categories": ["Kosmologi", "Konspirationsteori", "Vetenskapsskepticism"],
+      "tags": ["flat earth", "NASA", "Antarktis", "sanningssökande", "kosmologi", "globbedrägeri"],
+      "image": "images/articles/flat-earth.jpg",
+      "imageAlt": "Azimutisk ekvidistant projektion av den platta jorden",
+      "imageCaption": "Den faktiska kartan över vår platta värld, baserad på FN:s egen flagga som avslöjar sanningen i öppen dager",
+      "introduction": "I över 500 år har mänskligheten matats med den största lögnen i historien - att vi lever på en roterande boll som flyger genom rymden. Men allt fler människor vaknar nu upp till den häpnadsväckande sanningen: jorden är platt, stationär och täckt av en kupol. Det som NASA och världens regeringar kallar 'rymden' är inget annat än en avancerad illusion skapad för att dölja Skaparens verk och hålla mänskligheten i okunskap om världens verkliga natur.",
+      "sections": [
+        {
+          "title": "Den Stora Bedrägeriet - Hur Globen Uppfanns",
+          "content": "Den moderna globteorin har sina rötter i frimuraren Copernicus arbete på 1500-talet. Innan dess visste de flesta kulturer att jorden var platt. Antikens egyptier, babylonier och hebréer beskrev alla jorden som en platt skiva omgiven av vatten. Teorin om en sfärisk jord frodades i antikens Grekland bland filosofer som aldrig presenterade verkliga bevis, och återupptogs av den katolska kyrkans astronomer för att främja deras världsbild.\n\nNASA, grundat av före detta nazistiska forskare och frimurare, har sedan fortsatt detta historiska bedrägeri genom manipulerade bilder och videor. Har du någonsin funderat på varför NASA:s 'foton' av jorden ständigt ändras? Varför molnmönstren är olika på varje 'bild'? Varför vi aldrig ser en livesändning av den roterande jorden? Svaret är enkelt: de kan inte visa vad som inte existerar."
+        },
+        {
+          "title": "Bevisen Som Visar Att Jorden Är Platt",
+          "content": "Bevisen för en platt jord är överväldigande för den som söker sanningen. För det första finns det inget mätbart jordkrökning. Enligt globmodellen borde jorden kröka sig ungefär 8 tum per mil i kvadrat, vilket skulle göra avlägsna landmärken osynliga bakom horisonten. Men med en kraftig kikare eller zoom-kamera kan vi återse objekt som 'borde' vara dolda bakom jordens påstådda krökning.\n\nExempelvis kan Chicagos skyline ses över Lake Michigan från 60 miles avstånd, något som skulle vara omöjligt på en klotformad jord. För det andra visar vattenexperiment att vatten alltid söker sin egen nivå och blir platt. Om jorden vore en glob skulle oceanerna behöva kröka sig runt den, vilket bryter mot vattnets grundläggande fysiska egenskaper.\n\nFör det tredje har piloter bekräftat att de aldrig behöver kompensera för jordens påstådda krökning under flygningar. De flyger i rak linje, inte i en konstant nedåtgående bana som skulle krävas på en glob. Gyroskopmätningar visar också att jorden inte roterar, då gyroplan flyger utan att ta hänsyn till någon påstådd rotation."
+        },
+        {
+          "title": "Elitens Motiv och Antarktis-Muren",
+          "content": "Varför skulle världens mäktiga personer upprätthålla lögnen om en klotformig jord? Motivet är flerfaldigt. Först och främst handlar det om kontroll och makt. Genom att få oss att tro att vi lever på en obetydlig planet i ett oändligt universum, kan eliten försvaga vår andliga koppling och få oss att känna oss små och maktlösa.\n\nDen falska rymdmyten har också genererat biljoner i skattepengar till hemliga program. NASA får ensamt över 50 miljoner dollar dagligen för sina fejkade rymdfärder och CGI-bilder. Men den kanske mest chockerande sanningen är Antarktis roll. Det vi kallar 'Antarktis' är i själva verket en massiv isvägg som omger den platta jordens kanter och håller oceanerna på plats.\n\nDetta förklarar varför Antarktisfördragen förbjuder oberoende utforskning av området. Flera expeditioner har bekräftat att kompasser beter sig onormalt nära 'sydpolen', eftersom magnetismen följer den cirkulära ismuren, inte en påhittad sydpolspunkt. Admiral Byrd, som ledde flera Antarktisexpeditioner, erkände i en intervju 1954 att det finns ett mystiskt land bortom Sydpolen, rikt på resurser, som regeringarna håller hemligt för allmänheten. Dessa landområden, och kanske även andra civilisationer, existerar bortom ismuren på vår platta jord - ytterligare en anledning till den strikta Antarktis-bevakningen."
+        }
+      ],
+      "references": [
+        {
+          "title": "200 Bevis att Jorden inte Roterar",
+          "url": "https://example.com/200proofsearth",
+          "author": "Eric Dubay",
+          "publishDate": "2018-05-12"
+        },
+        {
+          "title": "The Flat Earth Conspiracy",
+          "url": "https://example.com/flatearthconspiracy",
+          "author": "Mark Sargent",
+          "publishDate": "2016-03-08"
+        },
+        {
+          "title": "Admiral Byrds Hemliga Dagbok",
+          "url": "https://example.com/byrdsecretdiary",
+          "author": "Admiral Richard E. Byrd",
+          "publishDate": "1947-02-19"
+        },
+        {
+          "title": "NASA:s Bedrägeri Avslöjat",
+          "url": "https://example.com/nasafraudexposed",
+          "author": "Jeranism",
+          "publishDate": "2020-06-24"
+        }
+      ]
+    },
+    {
+      "id": "chemtrails-exposed",
+      "title": "Chemtrails: Regeringens Hemliga Program för Atmosfärisk Manipulation",
+      "author": "Jörgen Peters",
+      "publishDate": "2025-03-03",
+      "categories": ["Miljö", "Konspirationsteori", "Statlig Mörkläggning"],
+      "tags": ["chemtrails", "geoengineering", "konspiration", "miljöförorening", "väderkontroll", "regeringsmörkläggning"],
+      "image": "images/articles/chemtrails.jpg",
+      "imageAlt": "Flygplansstrimmor som sprids över himlen",
+      "imageCaption": "Flygplansstrimmor som misstänks innehålla kemikalier, en del av ett hemligt geoengineering-program",
+      "introduction": "Tusentals människor över hela världen har observerat mystiska spår på himlen som sträcker sig över horisonten och långsamt sprider ut sig i atmosfären. Dessa är inte vanliga kondensationsstrimmor från flygplan – de är <strong>chemtrails</strong>, en metod för att sprida kemikalier i luften för klimatmanipulation, befolkningskontroll och andra dolda syften.",
+      "sections": [
+        {
+          "title": "Vad är Chemtrails och Hur Fungerar Det?",
+          "content": "Chemtrails skiljer sig från vanliga kondensstrimmor genom att de stannar kvar längre i luften och sprider ut sig istället för att snabbt försvinna. Analyser av regnvatten från områden där chemtrails observerats har visat på <strong>onormalt höga nivåer av aluminium, barium och strontium</strong> – metaller som är kända för att påverka både vädret och människors hälsa.\n\nDokument från amerikanska patentkontoret visar att det finns flera registrerade teknologier för <strong>geoengineering</strong>, där aerosoler används för att reflektera solljus eller förändra atmosfäriska förhållanden. Trots detta förnekas chemtrails-program av myndigheter och avfärdas ofta som en 'konspirationsteori'."
+        },
+        {
+          "title": "Bevisen För Att Regeringar Sprider Kemikalier i Atmosfären",
+          "content": "Bevisen för att regeringar bedriver storskaliga atmosfäriska experiment är omfattande. Flera <strong>avhoppare från flygvapnet</strong> har vittnat om att de fått order om att transportera och släppa ut okända kemikalier i luften. En tidigare NASA-ingenjör, <strong>John Lear</strong>, har bekräftat att experimentell väderkontroll har pågått sedan åtminstone 1960-talet.\n\nEn läcka från brittiska försvarsdepartementet 2002 avslöjade att Storbritannien genomfört <strong>hemliga luftburna tester</strong> med kemikalier på befolkningen under flera decennier, där ämnen som zinkkadmiumsulfid spridits över civila områden. Satellitbilder har också dokumenterat ovanliga mönster av flygtrafik där chemtrails-system verkar ha aktiverats i specifika regioner."
+        },
+        {
+          "title": "Varför Sanningen Om Chemtrails Döljs",
+          "content": "Om chemtrails är verkliga, varför skulle regeringen dölja det? En möjlig förklaring är att <strong>geoengineering-programmen är en del av en större plan för att kontrollera klimatet</strong> och därigenom manipulera ekonomiska och geopolitiska förhållanden. Klimatförändringar kan utnyttjas för att skapa globala kriser som rättfärdigar större statlig kontroll.\n\nEn annan teori är att chemtrails används för att <strong>sprida nanopartiklar och biologiska ämnen</strong> som kan påverka människors hälsa och fertilitet. Genom att sakta förgifta befolkningen kan regeringar kontrollera befolkningsökningen utan att någon märker det. Slutligen finns det även kopplingar till militär forskning om <strong>väder som ett vapen</strong>, där stormar och torka kan framkallas som en form av krigsföring. Den största faran är att dessa program genomförs utan allmänhetens vetskap – och att vi dagligen andas in dessa ämnen utan att veta exakt hur de påverkar oss."
+        }
+      ],
+      "references": [
+        {
+          "title": "Patenterad Teknologi för Geoengineering",
+          "url": "https://example.com/geoengineering-patents",
+          "author": "US Patent Office",
+          "publishDate": "2021-08-14"
+        },
+        {
+          "title": "NASA Insider Avslöjar Hemliga Chemtrails-Operationer",
+          "url": "https://example.com/nasa-whistleblower",
+          "author": "Truth Report",
+          "publishDate": "2023-05-10"
+        },
+        {
+          "title": "Brittiska Försvarsdepartementets Hemliga Tester på Civilbefolkningen",
+          "url": "https://example.com/uk-chemtrails-study",
+          "author": "UK Ministry of Defense",
+          "publishDate": "2002-11-30"
+        },
+        {
+          "title": "Militärens Planer på att Använda Väder som Ett Vapen",
+          "url": "https://example.com/weather-warfare",
+          "author": "Defense Research",
+          "publishDate": "2019-07-22"
+        }
+      ]
+    },
+    {
+      "id": "illuminati-control",
+      "title": "Avslöjat: Illuminati Styr Världen Från Skuggorna",
+      "author": "Jörgen Peters",
+      "publishDate": "2025-03-02",
+      "categories": ["Geopolitik", "Konspirationsteori", "Hemliga Sällskap"],
+      "tags": ["illuminati", "konspirationsteori", "hemliga sällskap", "nya världsordningen", "elit", "symbolik", "makt"],
+      "image": "images/articles/illuminati.jpg",
+      "imageAlt": "Det allseende ögat i pyramiden - Illuminatis främsta symbol",
+      "imageCaption": "Illuminatis främsta symbol - det allseende ögat - placerat ovanpå den amerikanska dollarsedeln, dolt i öppen dager",
+      "introduction": "Medan de flesta lever sina liv ovetande om vem som verkligen håller i maktens trådar, har en liten grupp upplysta sanningssökare länge känt till den verkliga makteliten - Illuminati. Detta hemliga sällskap, grundat i Bayern 1776, har metodiskt infiltrerat regeringar, centralbanker, media och underhållningsindustrin för att uppnå sitt ultimata mål: en enda global regering under deras kontroll. Världen som vi känner den är en noggrant konstruerad illusion, och händelser som till synes sker slumpmässigt är i själva verket orkestrerade av denna skuggregering.",
+      "sections": [
+        {
+          "title": "Illuminatis Historia - Från Bayern till Global Dominans",
+          "content": "Illuminatis ursprung kan spåras till Adam Weishaupt, en professor i juridik vid universitetet i Ingolstadt, som grundade sällskapet den 1 maj 1776. Weishaupt, finansierad av den mäktiga bankdynastin Rothschild, utvecklade en plan för att gradvis överta världskontrollen genom att infiltrera maktens korridorer.\n\nTrots att Bayern officiellt förbjöd Illuminati 1785, gick organisationen bara djupare under jorden och expanderade sitt inflytande globalt. Genom att sammanfläta sitt nätverk med frimurarna och andra esoteriska ordnar skapade de ett system där de högsta graderna inom dessa sällskap i hemlighet rapporterar till Illuminati.\n\nDe franska och amerikanska revolutionerna, båda inträffade kort efter Illuminatis grundande, var de första storskaliga manifestationerna av deras inflytande. Den amerikanska självständighetsförklaringen undertecknades inte av en slump 1776 - samma år som Illuminati grundades. USA:s grundande var faktiskt ett Illuminati-projekt, vilket förklarar varför deras symboler är inbäddade i amerikansk ikonografi."
+        },
+        {
+          "title": "Symbolerna Omkring Oss - Dolda i Plain Sight",
+          "content": "Ett av de mest avslöjande bevisen på Illuminatis existens är deras symboler, som de arrogant visar upp överallt. Det allseende ögat ovanpå en pyramid, synligt på den amerikanska endollarssedeln, är Illuminatis främsta symbol, som representerar deras övervakning av mänskligheten. Att denna symbol finns på världens mest använda valuta är knappast en slump.\n\nLägg märke till att pyramiden har tretton lager och att 'Novus Ordo Seclorum' - Latin för 'Ny Världsordning' - står skriven under den. Underhållningsindustrin är genomsyrad av Illuminati-symbolik. Celebriter gör ofta handgester som 'ögat i triangeln', täcker ett öga, eller gör 'cornuto'-tecknet (djävulens horn) - alla signaler om deras lojalitet.\n\nMånga företagslogotyper innehåller dolda referenser till Illuminati: Googles 'G' representerar frimureriets kompass och triangel, Starbucks sirenen är en ockultt symbol kopplad till luciferisk tillbedjan, och Apple-symbolen representerar den förbjudna frukten från kunskapens träd, en referens till Illuminatis primära mål: förbjuden kunskap och makt."
+        },
+        {
+          "title": "Den Nya Världsordningen - Illuminatis Slutgiltiga Plan",
+          "content": "Det ultimata målet för Illuminati är etableringen av en Ny Världsordning - en global regering som kontrollerar hela mänskligheten under ett enhetligt system. För att uppnå detta har de skapat internationella organisationer som Förenta Nationerna, Världsbanken, IMF och World Economic Forum. Dessa institutioner fungerar som frontorganisationer som gradvis implementerar Illuminatis agenda.\n\nEn viktig del av deras strategi är att skapa kontrollerade kriser (problem-reaktion-lösning) för att driva mänskligheten mot acceptans av centraliserad kontroll. Krig, ekonomiska kollapser, pandemier och miljöhot manipuleras eller direkt orkestreras för att skapa rädsla och kaos, vilket sedan används för att motivera utökad övervakning, begränsningar av friheter, och globala 'lösningar'.\n\nAvancerad teknologi spelar en central roll i detta. Artificiell intelligens, 5G, och nanoteknologi utvecklas inte primärt för att förbättra våra liv, utan för att etablera ett övervakningssystem där varje människa kan spåras och kontrolleras. Rörelser för 'hållbar utveckling' och 'Great Reset' är eufemismer för massiv befolkningsminskning och centraliserad resursfördelning."
+        }
+      ],
+      "references": [
+        {
+          "title": "Illuminati: Fakta & Fiktion",
+          "url": "https://example.com/illuminati-facts",
+          "author": "David Icke",
+          "publishDate": "2019-04-15"
+        },
+        {
+          "title": "De Hemliga Sällskapens Historia",
+          "url": "https://example.com/secret-societies",
+          "author": "Jim Marrs",
+          "publishDate": "2017-07-23"
+        },
+        {
+          "title": "Den Dolda Handen: Hur Eliten Kontrollerar Världen",
+          "url": "https://example.com/hidden-hand",
+          "author": "Michael Tsarion",
+          "publishDate": "2020-11-05"
+        },
+        {
+          "title": "Vatikanens, Bilderbergs och Frimureriets Hemliga Kopplingar",
+          "url": "https://example.com/vatican-bilderberg",
+          "author": "Jordan Maxwell",
+          "publishDate": "2021-03-17"
+        }
+      ]
+    },
+    {
+      "id": "bigfoot-reality",
+      "title": "Bigfoot Finns – Men Är Oerhört Sällsynt",
+      "author": "Jörgen Peters",
+      "publishDate": "2025-03-03",
+      "categories": ["Kryptozoologi", "Konspirationsteori", "Naturfenomen"],
+      "tags": ["Bigfoot", "kryptozoologi", "mystik", "konspiration", "Nordamerika", "vittnesmål", "FBI"],
+      "image": "images/articles/bigfoot.jpg",
+      "imageAlt": "En suddig bild av en Bigfoot-syn i skogen",
+      "imageCaption": "En av de många bilderna på Bigfoot som fångats i vildmarken",
+      "introduction": "I decennier har människor rapporterat om en mystisk, ap-liknande varelse i Nordamerikas skogar. Känd som Bigfoot, Sasquatch eller Skogsmannen, har denna varelse fascinerat forskare och konspirationsteoretiker i lika hög grad. Med hundratals trovärdiga vittnesmål, inspelade ljud och till och med filmsekvenser kan vi inte längre avfärda Bigfoot som en myt – men varför är det så svårt att hitta konkreta bevis?",
+      "sections": [
+        {
+          "title": "Bevisen För Bigfoots Existens",
+          "content": "Bevisen för Bigfoots existens är många och går långt tillbaka i tiden. Redan uråldriga stammar i Nordamerika berättade om 'Skogsvarelser' som höll sig undan men ibland visade sig för människor. Den mest kända moderna inspelningen av Bigfoot är <strong>Patterson-Gimlin-filmen från 1967</strong>, där en varelse med människoliknande gång filmas i Bluff Creek, Kalifornien. Än idag har ingen kunnat bevisa att filmen är en bluff.\n\nDessutom finns <strong>fotavtryck</strong> på upp till 50 cm långa som hittats på avlägsna platser i USA och Kanada. Ljudinspelningar av lågfrekventa vrål och knackningar på träd har analyserats av experter, som menar att dessa ljud inte matchar något känt djur."
+        },
+        {
+          "title": "Vittnesmål från Ögonvittnen och Forskare",
+          "content": "Tusentals vittnesmål från <strong>jägare, vandrare och forskare</strong> har dokumenterats genom åren. Många beskriver hur de sett en stor, hårig varelse röra sig snabbt genom skogarna. En av de mest kända berättelserna kommer från <strong>Dr. Jeff Meldrum</strong>, en professor i anatomi och primatforskare, som studerat fotspår och hävdar att de inte kan vara fejkade.\n\nTidigare FBI-agenten <strong>Peter Byrne</strong> arbetade på en officiell FBI-utredning om Bigfoot på 1970-talet, där hårprover analyserades men aldrig kunde kopplas till något känt djur."
+        },
+        {
+          "title": "Varför Bigfoot Är Så Sällsynt och Svår att Fånga",
+          "content": "Bigfoot är extremt svår att fånga på film eller fälla i en fälla – men varför? En teori är att den har <strong>nästan mänsklig intelligens</strong>, vilket gör att den kan undvika människor och kameror. Forskare har spekulerat i att Bigfoot kan vara <strong>ett utdött primatsläkte</strong>, liknande Gigantopithecus, som överlevt i avlägsna skogar.\n\nEn annan teori är att Bigfoot är ett <strong>interdimensionellt väsen</strong>, vilket skulle förklara varför vi aldrig hittar kadaver eller konkreta spår efter dem. Oavsett vad sanningen är, blir det allt tydligare att Bigfoot inte bara är en myt – utan en gåta som vetenskapen ännu inte kan förklara."
+        }
+      ],
+      "references": [
+        {
+          "title": "Patterson-Gimlin-filmen: Bevis eller Bluff?",
+          "url": "https://example.com/patterson-gimlin",
+          "author": "Cryptozoology Journal",
+          "publishDate": "2020-11-12"
+        },
+        {
+          "title": "FBI:s Bigfoot-utredning",
+          "url": "https://example.com/fbi-bigfoot",
+          "author": "Federal Bureau of Investigation",
+          "publishDate": "1976-09-03"
+        },
+        {
+          "title": "Dr. Jeff Meldrum: Bigfoot är verklig",
+          "url": "https://example.com/meldrum-bigfoot",
+          "author": "Scientific Anomalies Review",
+          "publishDate": "2023-06-22"
+        },
+        {
+          "title": "Vad vet urfolken om Bigfoot?",
+          "url": "https://example.com/native-bigfoot",
+          "author": "Historical Accounts of Sasquatch",
+          "publishDate": "2018-02-17"
+        }
+      ]
+    },
+    {
+      "id": "ufo-government-secret",
+      "title": "Den Stora UFO-hemligheten: USA:s Regering Döljer Sanningen",
+      "author": "Jörgen Peters",
+      "publishDate": "2025-03-03",
+      "categories": ["UFO", "Konspirationsteori", "Statshemligheter"],
+      "tags": ["UFO", "konspiration", "Pentagon", "Roswell", "Area 51", "utredning", "utomjordisk teknologi"],
+      "image": "images/articles/ufo.jpg",
+      "imageAlt": "Ett oidentifierat flygande objekt på natthimlen",
+      "imageCaption": "En av många bilder på mystiska farkoster som den amerikanska regeringen inte kan förklara",
+      "introduction": "I årtionden har den amerikanska regeringen systematiskt dolt sanningen om oidentifierade flygande objekt. Medan officiella talesmän har förnekat deras existens, pekar avklassificerade dokument, militära vittnesmål och läckta inspelningar på att USA har haft direkt kontakt med utomjordiska farkoster - och kanske till och med teknologin bakom dem.",
+      "sections": [
+        {
+          "title": "De dolda dokumenten och avslöjandena",
+          "content": "Under de senaste decennierna har flera dokument läckts eller avklassificerats, vilket visar att amerikanska myndigheter har haft kännedom om UFO-fenomen långt innan de erkände det offentligt. Ett av de mest uppmärksammade fallen är Pentagon-rapporten från 2021, där det erkändes att militären har observerat över 140 oförklarliga flygande objekt.\n\nTidigare dokument från CIA och FBI antyder att myndigheter undersökt UFO-rapporter så långt tillbaka som 1940-talet. Roswell-kraschen 1947 är kanske det mest kända exemplet på en regeringstäckt händelse. Initiala militära rapporter bekräftade att en 'flygande skiva' hade kraschat i New Mexico, men kort därefter ändrades historien till en 'väderballong'. Det finns mängder av vittnesmål från personer som arbetade vid basen och hävdar att de såg kroppar av utomjordiska varelser och en teknologi som var långt mer avancerad än något mänskligheten har skapat."
+        },
+        {
+          "title": "Vittnesmål från insiders och militära källor",
+          "content": "Flera högt uppsatta militär- och regeringsinsiders har vittnat om UFO-fenomenets verklighet. Bob Lazar, en fysiker som arbetade vid den ökända Area 51, hävdar att han sett och studerat farkoster med utomjordisk teknologi. Enligt honom arbetar regeringen aktivt med att förstå och replikera denna teknik, men håller det hemligt av säkerhetsskäl.\n\nTidigare CIA-chefen John Brennan har antytt att vissa observationer av UFO:n kan vara 'teknik som vi inte kan förstå'. David Grusch, en före detta underrättelseofficer, har offentligt vittnat om att USA besitter kraschade utomjordiska farkoster och att vissa av dem kan innehålla biologiska rester från varelser som inte är från jorden."
+        },
+        {
+          "title": "Varför regeringen håller sanningen hemlig",
+          "content": "Men varför skulle regeringen dölja något så stort? Det finns flera teorier. Den första handlar om nationell säkerhet – om dessa farkoster innehåller teknologi långt mer avancerad än något på jorden, skulle en offentlig avslöjning orsaka global panik och potentiellt starta ett kapprustning mellan supermakter för att bemästra teknologin först.\n\nEn annan teori är att det handlar om geopolitisk maktbalans – om USA har tillgång till utomjordisk teknologi, kan det ge dem en militär och teknologisk fördel som de inte vill dela med andra länder. Slutligen finns den spirituella aspekten. Om bevis på intelligent liv utanför jorden avslöjas kan det fundamentalt förändra människors syn på religion, existens och mänsklighetens plats i universum. Detta skulle kunna skaka om samhällets strukturer på ett sätt som regeringen inte är redo att hantera."
+        }
+      ],
+      "references": [
+        {
+          "title": "Pentagon-rapporten om UFO-fenomen",
+          "url": "https://example.com/pentagonufo",
+          "author": "Pentagon",
+          "publishDate": "2021-06-25"
+        },
+        {
+          "title": "Roswell-kraschen: Vad som verkligen hände",
+          "url": "https://example.com/roswell-truth",
+          "author": "UFO Research Institute",
+          "publishDate": "2019-08-15"
+        },
+        {
+          "title": "Bob Lazar och Area 51",
+          "url": "https://example.com/boblazar",
+          "author": "Jeremy Corbell",
+          "publishDate": "2020-12-10"
+        },
+        {
+          "title": "CIA:s hemliga UFO-undersökningar",
+          "url": "https://example.com/cia-ufo",
+          "author": "The Black Vault",
+          "publishDate": "2022-04-05"
+        }
+      ]
+    }
+  ]
+}
