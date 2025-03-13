@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faktabaserade Nyheter | Truth Matrix</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bluepill.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Truth Matrix Logo" class="logo">
+                <h1>Truth Matrix</h1>
+            </a>
+        </div>
+        <div class="search-container">
+            <input type="text" id="search-input" class="search-bar" placeholder="Sök bland artiklar...">
+            <div id="search-results" class="search-results"></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="about.html">Om oss</a></li>
+                <li><a href="index.html">Tillbaka till val</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="trust-banner">
+        <p><i class="fas fa-check-circle"></i> Alla artiklar är granskade av utbildade journalister och faktakontrollerade.</p>
+    </div>
+
+    <main>
+        <section class="article-container">
+            <div class="control-buttons">
+                <button id="prev-article" class="control-button">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button id="next-article" class="control-button">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            
+            <article id="current-article" class="article collapsed">
+                <h2 class="article-title">Laddar artikel...</h2>
+                <div class="article-metadata">
+                    <p class="publish-date">Publiceringsdatum: <span id="publish-date">--</span></p>
+                    <p class="author">Författare: <span id="author">--</span></p>
+                    <p class="category">Kategori: <span id="category">--</span></p>
+                </div>
+                
+                <div class="article-tags" id="article-tags">
+                    <!-- Tags will be inserted here -->
+                </div>
+                
+                <div class="article-image-container">
+                    <img id="article-image" src="" alt="Article image" class="article-image">
+                    <p id="image-caption" class="image-caption"></p>
+                </div>
+                
+                <div class="article-introduction">
+                    <p id="article-intro"></p>
+                </div>
+                
+                <div class="article-content collapse-content">
+                    <div class="article-section">
+                        <h3 id="section-1-title"></h3>
+                        <p id="section-1-content"></p>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 id="section-2-title"></h3>
+                        <p id="section-2-content"></p>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 id="section-3-title"></h3>
+                        <p id="section-3-content"></p>
+                    </div>
+                </div>
+                
+                <button id="expand-button" class="expand-button">Läs mer <i class="fas fa-angle-down"></i></button>
+                
+                <div class="fact-check-section">
+                    <h4><i class="fas fa-balance-scale"></i> Faktakoll</h4>
+                    <p>Denna artikel har granskats av våra faktakontrollanter och bedöms vara korrekt enligt etablerade källor.</p>
+                </div>
+                
+                <div class="article-references collapse-content">
+                    <h3>Källor och referenser</h3>
+                    <ul id="references-list">
+                        <!-- References will be inserted here -->
+                    </ul>
+                </div>
+            </article>
+        </section>
+        
+        <section class="interaction-section">
+            <div class="social-actions">
+                <button class="reaction-button"><i class="fas fa-thumbs-up"></i> Gilla <span id="like-count">0</span></button>
+                <button class="reaction-button"><i class="fas fa-share-alt"></i> Dela</button>
+                <button class="reaction-button"><i class="fas fa-bookmark"></i> Spara</button>
+            </div>
+            
+            <div class="comment-section">
+                <h3>Diskutera artikeln</h3>
+                <div class="comment-form">
+                    <textarea id="comment-input" placeholder="Vad tänker du om artikeln?"></textarea>
+                    <button id="post-comment" class="post-comment-button">Kommentera</button>
+                </div>
+                
+                <div id="comments-container" class="comments-container">
+                    <!-- Comments will be inserted here -->
+                </div>
+            </div>
+        </section>
+        
+        <aside class="sidebar">
+            <div class="popular-articles">
+                <h3>Populära artiklar</h3>
+                <ul id="popular-articles-list">
+                    <!-- Popular articles will be inserted here -->
+                </ul>
+            </div>
+            
+            <div class="trending-topics">
+                <h3>Trendande ämnen</h3>
+                <div class="topic-tags" id="trending-topics">
+                    <!-- Trending topics will be inserted here -->
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <div class="newsletter-signup">
+        <div class="newsletter-content">
+            <h3>Prenumerera på vårt nyhetsbrev</h3>
+            <p>Få de senaste faktabaserade nyheterna direkt i din inkorg varje vecka.</p>
+            <form id="newsletter-form">
+                <input type="email" placeholder="Din e-postadress" required>
+                <button type="submit">Prenumerera</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Truth Matrix</h4>
+                <p>Oberoende nyheter med faktabaserat innehåll sedan 2025.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Navigering</h4>
+                <ul>
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a href="about.html">Om oss</a></li>
+                    <li><a href="redpill.html">Röd pill</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Policys</h4>
+                <p>Vi värnar om saklighet, objektivitet och journalistisk integritet.</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Truth Matrix | Alla rättigheter reserverade</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/articles.js"></script>
+    <script src="js/bluepill.js"></script>
+    <script src="js/comments.js"></script>
+    <script src="js/search.js"></script>
+</body>
+</html>
