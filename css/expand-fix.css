@@ -1,0 +1,58 @@
+/* 
+   CSS Fixes for Read More button functionality
+*/
+
+/* Make sure the collapsed content is actually hidden */
+.collapse-content {
+    max-height: 0 !important;
+    overflow: hidden !important;
+    transition: max-height 0.8s ease !important;
+    opacity: 1;
+}
+
+/* When expanded, allow content to be visible */
+.article.expanded .collapse-content {
+    max-height: 5000px !important; /* Large value to ensure all content fits */
+}
+
+/* Ensure the button is properly styled and visible */
+.expand-button {
+    display: block !important;
+    width: 100% !important;
+    padding: 10px !important;
+    margin: 20px 0 !important;
+    cursor: pointer !important;
+    text-align: center !important;
+    background-color: rgba(120, 0, 0, 0.15) !important;
+    color: #d5d5d5 !important;
+    border: 1px solid rgba(120, 0, 0, 0.3) !important;
+    border-radius: 5px !important;
+    font-weight: 500 !important;
+    position: relative !important;
+    z-index: 10 !important;
+}
+
+/* Hover effect for the button */
+.expand-button:hover {
+    background-color: rgba(120, 0, 0, 0.3) !important;
+}
+
+/* Ensure the arrow icon rotates properly */
+.expand-button i {
+    transition: transform 0.3s ease !important;
+    display: inline-block !important;
+}
+
+.article.expanded .expand-button i {
+    transform: rotate(180deg) !important;
+}
+
+/* Add debug outline to help identify issues */
+.article {
+    position: relative;
+}
+
+/* Clean up any issues with the article sections */
+.article-section {
+    opacity: 1;
+}
