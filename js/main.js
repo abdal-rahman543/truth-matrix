@@ -4,6 +4,8 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
+    console.log("DOM helt laddad, initierar funktioner...");
+    
     // Initialize modal functionality
     initModals();
     
@@ -26,12 +28,20 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Check for URL parameters
     handleUrlParameters();
+    
+    // Testa modalknapparna direkt
+    console.log("Testar om modalknapparna finns:");
+    console.log("Röd pill-knapp:", document.getElementById('red-pill-button'));
+    console.log("Blå pill-knapp:", document.getElementById('blue-pill-button'));
+    console.log("Röd pill-modal:", document.getElementById('red-pill-modal'));
+    console.log("Blå pill-modal:", document.getElementById('blue-pill-modal'));
 });
 
 /**
  * Initialize modal functionality
  */
 function initModals() {
+    console.log("Initierar modaler...");
     // Get modal elements
     const redPillModal = document.getElementById('red-pill-modal');
     const bluePillModal = document.getElementById('blue-pill-modal');
@@ -39,28 +49,41 @@ function initModals() {
     const bluePillButton = document.getElementById('blue-pill-button');
     
     // If there are no modals on this page, return
-    if (!redPillModal && !bluePillModal) return;
+    if (!redPillModal && !bluePillModal) {
+        console.log("Inga modaler hittades på denna sida.");
+        return;
+    }
     
     // Add click event for red pill button
     if (redPillButton && redPillModal) {
+        console.log("Lägger till klickhändelse för röd pill-knapp");
         redPillButton.addEventListener('click', (e) => {
+            console.log("Röd pill-knapp klickad!");
             e.preventDefault();
             redPillModal.classList.add('active');
         });
+    } else {
+        console.log("Kunde inte hitta röd pill-knapp eller modal");
     }
     
     // Add click event for blue pill button
     if (bluePillButton && bluePillModal) {
+        console.log("Lägger till klickhändelse för blå pill-knapp");
         bluePillButton.addEventListener('click', (e) => {
+            console.log("Blå pill-knapp klickad!");
             e.preventDefault();
             bluePillModal.classList.add('active');
         });
+    } else {
+        console.log("Kunde inte hitta blå pill-knapp eller modal");
     }
     
     // Add click events for cancel buttons
     const cancelButtons = document.querySelectorAll('.modal-button.cancel');
+    console.log("Hittade", cancelButtons.length, "avbrytningsknappar");
     cancelButtons.forEach(button => {
         button.addEventListener('click', () => {
+            console.log("Avbrytningsknapp klickad, stänger modaler");
             document.querySelectorAll('.modal').forEach(modal => {
                 modal.classList.remove('active');
             });
@@ -71,6 +94,7 @@ function initModals() {
     document.querySelectorAll('.modal').forEach(modal => {
         modal.addEventListener('click', (e) => {
             if (e.target === modal) {
+                console.log("Klick utanför modal-innehåll, stänger modal");
                 modal.classList.remove('active');
             }
         });
@@ -79,6 +103,7 @@ function initModals() {
     // Close modal with escape key
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape') {
+            console.log("Escape-tangent tryckt, stänger modaler");
             document.querySelectorAll('.modal').forEach(modal => {
                 modal.classList.remove('active');
             });
