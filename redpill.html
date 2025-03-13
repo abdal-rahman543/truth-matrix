@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/redpill.css">
     <link rel="stylesheet" href="css/redpill-enhanced.css">
+    <!-- Add the expand fix CSS file last to ensure it takes precedence -->
+    <link rel="stylesheet" href="css/expand-fix.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -183,7 +185,7 @@
         </div>
     </footer>
 
-    <!-- Load all scripts -->
+    <!-- Load all other scripts first -->
     <script src="js/main.js"></script>
     <script src="js/articles.js"></script>
     <script src="js/redpill.js"></script>
@@ -191,7 +193,7 @@
     <script src="js/comments-fix.js"></script>
     <script src="js/search.js"></script>
     
-    <!-- Load the fix script last to ensure it overrides any other functionality -->
+    <!-- Load our fix script last to ensure it overrides any other functionality -->
     <script src="js/expand-fix.js"></script>
     
     <script>
@@ -213,7 +215,8 @@
                 matrixAnimation.appendChild(span);
             }
             
-            // We've removed the expand button handler from here as it's now in expand-fix.js
+            // Debug log to check if the expand button exists
+            console.log("Expand button exists:", !!document.getElementById('expand-button'));
         });
     </script>
 </body>
