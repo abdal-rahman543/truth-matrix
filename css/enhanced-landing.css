@@ -1,0 +1,843 @@
+/* 
+   Enhanced Landing Page CSS for Truth Matrix
+   Modern, interactive styling for the home/landing page
+*/
+
+/* ---- GLOBAL VARIABLES ---- */
+:root {
+    /* Enhanced colors */
+    --primary-dark: #080c14;
+    --primary-light: #f8f9fa;
+    
+    /* Animation speeds */
+    --anim-slow: 1.2s;
+    --anim-medium: 0.8s;
+    --anim-fast: 0.4s;
+    
+    /* Shadow effects */
+    --glow-red: 0 0 15px rgba(193, 18, 31, 0.6);
+    --glow-blue: 0 0 15px rgba(0, 119, 182, 0.6);
+    --subtle-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --deep-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* ---- CORE LAYOUT ---- */
+body {
+    background-color: var(--primary-dark);
+    color: var(--text-light);
+    font-family: var(--body-font);
+    line-height: 1.6;
+    overflow-x: hidden;
+    min-height: 100vh;
+    position: relative;
+}
+
+.particles-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse at center, rgba(8, 12, 20, 0.4) 0%, rgba(8, 12, 20, 0.8) 100%);
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* ---- ENHANCED HEADER ---- */
+.navbar {
+    background-color: rgba(10, 15, 25, 0.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 1rem 2rem;
+    transition: all var(--transition-medium);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.logo-icon {
+    font-size: 1.8rem;
+    color: white;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.logo-icon::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, var(--red-pill-primary), var(--blue-pill-primary));
+    border-radius: 12px;
+    transform: rotate(45deg);
+    z-index: -1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo-icon i {
+    font-size: 1.4rem;
+    color: white;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.navbar h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0;
+    background: linear-gradient(to right, #ffffff, #d0d0d0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Enhanced navigation links */
+nav ul li a {
+    position: relative;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 500;
+    padding: 0.5rem 0;
+    transition: all var(--transition-fast);
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(to right, var(--red-pill-secondary), var(--blue-pill-primary));
+    transition: width var(--transition-medium) ease;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+}
+
+nav ul li a:hover::after,
+nav ul li.active a::after {
+    width: 100%;
+}
+
+/* ---- ENHANCED COUNTDOWN ---- */
+.countdown {
+    display: flex;
+    gap: 0.6rem;
+    background-color: rgba(20, 30, 45, 0.7);
+    border-radius: 12px;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.countdown-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.countdown-item span {
+    font-family: 'Montserrat', monospace;
+    font-weight: 600;
+}
+
+.countdown-item span:first-child {
+    font-size: 1.4rem;
+    color: white;
+    min-width: 2ch;
+    text-align: center;
+}
+
+.countdown-label {
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+}
+
+.countdown-item:not(:last-child)::after {
+    content: ':';
+    position: absolute;
+    right: -0.5rem;
+    top: 0.1rem;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.2rem;
+}
+
+/* Pulse animation for seconds */
+@keyframes pulseFade {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+#countdown-seconds {
+    animation: pulseFade 1s infinite;
+}
+
+/* ---- HERO SECTION ---- */
+.hero {
+    min-height: calc(100vh - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.content {
+    max-width: 1000px;
+    z-index: 1;
+    text-align: center;
+    padding: 2rem;
+    margin: 0 auto;
+    background-color: rgba(10, 15, 25, 0.7);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform var(--transition-medium), box-shadow var(--transition-medium);
+}
+
+.content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Enhanced typography */
+.tagline {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    color: white;
+    font-weight: 700;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(to right, #ffffff, #b0b0b0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInDown var(--anim-medium) ease-out forwards;
+}
+
+@keyframes fadeInDown {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.description {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp var(--anim-medium) ease-out 0.3s forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Enhanced quote styling */
+.matrix-quote {
+    margin: 3rem auto;
+    max-width: 800px;
+    opacity: 0;
+    animation: fadeIn var(--anim-slow) ease-out 0.6s forwards;
+    position: relative;
+}
+
+.matrix-quote blockquote {
+    font-size: 1.4rem;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.9);
+    padding: 2rem 3rem;
+    border-left: none;
+    border-radius: 15px;
+    background: rgba(30, 40, 60, 0.6);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    line-height: 1.8;
+}
+
+.matrix-quote blockquote::before,
+.matrix-quote blockquote::after {
+    content: '"';
+    font-size: 4rem;
+    position: absolute;
+    opacity: 0.2;
+    color: white;
+    font-family: Georgia, serif;
+    line-height: 0;
+}
+
+.matrix-quote blockquote::before {
+    top: 2rem;
+    left: 1rem;
+}
+
+.matrix-quote blockquote::after {
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.matrix-quote cite {
+    display: block;
+    margin-top: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    text-align: right;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* ---- PILL CHOICE SECTION ---- */
+.choice-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
+    margin-top: 3rem;
+    opacity: 0;
+    animation: fadeInUp var(--anim-medium) ease-out 0.9s forwards;
+}
+
+.choice-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.choice-divider span {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(10, 15, 25, 0.7);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.choice-divider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(to bottom, 
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0.3),
+        rgba(255, 255, 255, 0));
+}
+
+.choice {
+    flex: 1;
+    max-width: 350px;
+    padding: 2.5rem 2rem;
+    background: rgba(20, 30, 45, 0.7);
+    border-radius: 15px;
+    box-shadow: var(--subtle-shadow);
+    transition: transform var(--transition-medium), box-shadow var(--transition-medium);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.choice::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    transition: var(--transition-medium);
+}
+
+.red-pill::before {
+    background: linear-gradient(to right, var(--red-pill-gradient-start), var(--red-pill-gradient-end));
+}
+
+.blue-pill::before {
+    background: linear-gradient(to right, var(--blue-pill-gradient-start), var(--blue-pill-gradient-end));
+}
+
+.choice:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--deep-shadow);
+}
+
+.red-pill:hover {
+    box-shadow: var(--deep-shadow), var(--glow-red);
+}
+
+.blue-pill:hover {
+    box-shadow: var(--deep-shadow), var(--glow-blue);
+}
+
+.pill-image {
+    width: 120px;
+    height: 120px;
+    background: rgba(30, 40, 60, 0.5);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1.5rem;
+    position: relative;
+    transition: transform var(--transition-medium);
+    z-index: 1;
+}
+
+.red-pill .pill-image {
+    border: 2px solid rgba(193, 18, 31, 0.4);
+}
+
+.blue-pill .pill-image {
+    border: 2px solid rgba(0, 119, 182, 0.4);
+}
+
+.pill-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+    font-size: 1.5rem;
+    z-index: 2;
+}
+
+.red-pill .pill-icon {
+    background: linear-gradient(135deg, var(--red-pill-gradient-start), var(--red-pill-gradient-end));
+    box-shadow: 0 0 15px rgba(193, 18, 31, 0.3);
+}
+
+.blue-pill .pill-icon {
+    background: linear-gradient(135deg, var(--blue-pill-gradient-start), var(--blue-pill-gradient-end));
+    box-shadow: 0 0 15px rgba(0, 119, 182, 0.3);
+}
+
+.choice:hover .pill-image {
+    transform: rotate(8deg) scale(1.05);
+}
+
+.choice h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.red-pill h3 {
+    color: var(--red-pill-secondary);
+}
+
+.blue-pill h3 {
+    color: var(--blue-pill-primary);
+}
+
+.choice p {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.choice-button {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all var(--transition-fast);
+    text-align: center;
+    width: 100%;
+    font-size: 1.1rem;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+/* Red Pill Button */
+.red-pill .choice-button {
+    background: linear-gradient(135deg, var(--red-pill-gradient-start), var(--red-pill-gradient-end));
+    color: white;
+    box-shadow: 0 4px 15px rgba(193, 18, 31, 0.3);
+}
+
+.red-pill .choice-button:hover {
+    background: linear-gradient(135deg, var(--red-pill-gradient-end), var(--red-pill-gradient-start));
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(193, 18, 31, 0.4);
+}
+
+/* Blue Pill Button */
+.blue-pill .choice-button {
+    background: linear-gradient(135deg, var(--blue-pill-gradient-start), var(--blue-pill-gradient-end));
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 119, 182, 0.3);
+}
+
+.blue-pill .choice-button:hover {
+    background: linear-gradient(135deg, var(--blue-pill-gradient-end), var(--blue-pill-gradient-start));
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 119, 182, 0.4);
+}
+
+/* Button ripple effect */
+.choice-button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    border-radius: 100%;
+    transform: scale(1, 1) translate(-50%);
+    transform-origin: 50% 50%;
+}
+
+.choice-button:active::after {
+    animation: ripple 0.6s ease-out;
+    opacity: 0.6;
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(0, 0);
+        opacity: 0.6;
+    }
+    100% {
+        transform: scale(20, 20);
+        opacity: 0;
+    }
+}
+
+/* ---- ENHANCED MODAL STYLES ---- */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity var(--transition-medium);
+}
+
+.modal.active {
+    display: flex;
+    animation: modalFadeIn var(--transition-medium) forwards;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.modal-content {
+    background-color: rgba(20, 30, 45, 0.95);
+    padding: 2.5rem;
+    border-radius: 20px;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    transform: scale(0.9);
+    opacity: 0;
+    animation: modalContentFadeIn var(--transition-medium) 0.1s forwards;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+@keyframes modalContentFadeIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.modal-content h2 {
+    margin-bottom: 1.5rem;
+    color: white;
+    font-size: 2rem;
+}
+
+.modal-content p {
+    margin-bottom: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.7;
+    font-size: 1.1rem;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.modal-button {
+    padding: 0.8rem 1.8rem;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all var(--transition-fast);
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+    min-width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Modal Specific Styles */
+#red-pill-modal .modal-content {
+    border-top: 5px solid var(--red-pill-secondary);
+}
+
+#red-pill-modal .modal-button.confirm {
+    background: linear-gradient(135deg, var(--red-pill-gradient-start), var(--red-pill-gradient-end));
+    color: white;
+    box-shadow: 0 4px 15px rgba(193, 18, 31, 0.3);
+}
+
+#red-pill-modal .modal-button.confirm:hover {
+    background: linear-gradient(135deg, var(--red-pill-gradient-end), var(--red-pill-gradient-start));
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(193, 18, 31, 0.4);
+}
+
+#blue-pill-modal .modal-content {
+    border-top: 5px solid var(--blue-pill-primary);
+}
+
+#blue-pill-modal .modal-button.confirm {
+    background: linear-gradient(135deg, var(--blue-pill-gradient-start), var(--blue-pill-gradient-end));
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 119, 182, 0.3);
+}
+
+#blue-pill-modal .modal-button.confirm:hover {
+    background: linear-gradient(135deg, var(--blue-pill-gradient-end), var(--blue-pill-gradient-start));
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 119, 182, 0.4);
+}
+
+.modal-button.cancel {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.modal-button.cancel:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ---- ENHANCED FOOTER ---- */
+footer {
+    background-color: rgba(10, 15, 25, 0.9);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.7);
+    padding: 1.5rem 0;
+    margin-top: auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.7);
+    transition: color var(--transition-fast);
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+/* ---- RESPONSIVE STYLES ---- */
+@media screen and (max-width: 992px) {
+    .tagline {
+        font-size: 2.8rem;
+    }
+    
+    .description {
+        font-size: 1.3rem;
+    }
+    
+    .matrix-quote blockquote {
+        font-size: 1.2rem;
+        padding: 1.5rem 2rem;
+    }
+    
+    .choice {
+        padding: 2rem 1.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 0.8rem 1rem;
+    }
+    
+    .content {
+        padding: 1.5rem;
+    }
+    
+    .tagline {
+        font-size: 2.2rem;
+    }
+    
+    .description {
+        font-size: 1.1rem;
+    }
+    
+    .choice-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .choice {
+        max-width: 100%;
+    }
+    
+    .choice-divider {
+        display: none;
+    }
+    
+    .modal-content {
+        padding: 1.5rem;
+    }
+    
+    .modal-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .modal-button {
+        width: 100%;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .tagline {
+        font-size: 1.8rem;
+    }
+    
+    .countdown {
+        padding: 0.3rem 0.7rem;
+    }
+    
+    .countdown-item span:first-child {
+        font-size: 1.2rem;
+    }
+    
+    .countdown-label {
+        font-size: 0.6rem;
+    }
+    
+    .pill-image {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .pill-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.3rem;
+    }
+    
+    .choice h3 {
+        font-size: 1.5rem;
+    }
+    
+    .choice p {
+        font-size: 1rem;
+    }
+    
+    .modal-content h2 {
+        font-size: 1.6rem;
+    }
+    
+    .modal-content p {
+        font-size: 1rem;
+    }
+}
