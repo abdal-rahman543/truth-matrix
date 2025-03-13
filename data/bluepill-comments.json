@@ -1,0 +1,204 @@
+{
+  "comments": [
+    {
+      "id": "bc-001",
+      "articleId": "vaccine-medical-revolution",
+      "author": "DoctorAnna",
+      "text": "Som läkare vill jag tacka för denna välskrivna artikel. Vi möter dagligen patienter som har frågor om vaccin, och det är viktigt att ha sakliga och vetenskapligt förankrade källor att hänvisa till. Särskilt avsnittet om flockimmunitet förklarar konceptet på ett lättförståeligt sätt.",
+      "date": "2025-03-03T18:14:22Z",
+      "likes": 34
+    },
+    {
+      "id": "bc-002",
+      "articleId": "vaccine-medical-revolution",
+      "author": "ImmunoResearcher",
+      "text": "Bra överblick av vaccinationens historia och framtid. Jag skulle vilja tillägga att de nya mRNA-plattformarna inte bara är viktiga för framtida vaccin mot infektionssjukdomar, utan kan även utgöra grunden för behandlingar mot cancer och autoimmuna sjukdomar. Forskningen på detta område går snabbt framåt.",
+      "date": "2025-03-04T09:37:18Z",
+      "likes": 27
+    },
+    {
+      "id": "bc-003",
+      "articleId": "vaccine-medical-revolution",
+      "author": "PublicHealthAdvocate",
+      "text": "Bra artikel! Min farmor berättade ofta om hur polio drabbade hennes samhälle på 1950-talet, och vilken otrolig lättnad det var när vaccinet kom. Vi glömmer ibland hur dessa sjukdomar faktiskt såg ut. Jag önskar att artikeln också berört de utmaningar vi står inför med vaccintveksamhet och desinformation.",
+      "date": "2025-03-05T12:45:56Z",
+      "likes": 19
+    },
+    {
+      "id": "bc-004",
+      "articleId": "vaccine-medical-revolution",
+      "author": "CuriousMind",
+      "text": "Intressant läsning. En fråga: hur lång tid tar det typiskt att utveckla ett nytt vaccin från labbet till allmänheten? Jag förstår att COVID-19 var ett speciellt fall med all finansiering och samarbete globalt, men vad är den normala tidslinjen?",
+      "date": "2025-03-06T16:08:32Z",
+      "likes": 12
+    },
+    {
+      "id": "bc-005",
+      "articleId": "vaccine-medical-revolution",
+      "author": "GlobalHealthWorker",
+      "text": "Som någon som arbetar med vaccinationsprogram i låginkomstländer uppskattar jag artikelns fokus på innovationer som nässprayvaccin och orala alternativ. Distribution och kylkedjor är enorma utmaningar i många delar av världen, och termostabila vaccin skulle verkligen kunna rädda miljontals liv.",
+      "date": "2025-03-07T10:22:47Z",
+      "likes": 41
+    },
+    {
+      "id": "bc-006",
+      "articleId": "news-misinformation",
+      "author": "MediaLiteracy",
+      "text": "Detta är en utmärkt översikt av problematiken med misinformation. Det jag tycker saknas är konkreta tips till läsaren om hur man kan utveckla sin egen källkritiska förmåga. Faktakontroll är inte bara för journalister - vi måste alla bli bättre på att utvärdera information vi konsumerar.",
+      "date": "2025-03-03T19:28:53Z",
+      "likes": 29
+    },
+    {
+      "id": "bc-007",
+      "articleId": "news-misinformation",
+      "author": "JournalismProfessor",
+      "text": "Som journalistiklärare använder jag ofta exempel på desinformation i min undervisning. Det som gör problemet så utmanande idag är att tekniken för att skapa falsk information (deepfakes, AI-genererat innehåll) utvecklas snabbare än metoderna för att upptäcka den. Vi behöver mer forskning och utveckling inom tekniska lösningar för verifiering.",
+      "date": "2025-03-04T11:15:07Z",
+      "likes": 42
+    },
+    {
+      "id": "bc-008",
+      "articleId": "news-misinformation",
+      "author": "FactCheckEnthusiast",
+      "text": "Jag arbetar med faktakontroll och kan bekräfta många av punkterna i artikeln. En utmaning som vi inte pratar tillräckligt om är den psykologiska aspekten - människor tenderar att tro på information som bekräftar deras existerande övertygelser. Faktakontroll kan faktiskt ibland stärka felaktiga övertygelser hos vissa, ett fenomen kallat 'backfire effect'.",
+      "date": "2025-03-05T14:42:19Z",
+      "likes": 31
+    },
+    {
+      "id": "bc-009",
+      "articleId": "news-misinformation",
+      "author": "DigitalCitizen",
+      "text": "Mycket relevant artikel. Jag har börjat använda flera olika nyhetskällor för att få en bredare bild, och kontrollerar alltid information innan jag delar den. Tror att mediautbildning borde vara obligatoriskt i skolan från tidig ålder. Förstår ni om det finns några planer på det i svensk läroplan?",
+      "date": "2025-03-06T08:53:41Z",
+      "likes": 18
+    },
+    {
+      "id": "bc-010",
+      "articleId": "news-misinformation",
+      "author": "TechResearcher",
+      "text": "Bra artikel, men jag skulle vilja se mer diskussion om plattformarnas ansvar. Sociala medier har designats för att maximera engagemang, och innehåll som väcker starka känslor (ofta felaktigt eller missvisande) tenderar att spridas fortare. Detta är ett systemfel i designen, inte bara ett innehållsproblem.",
+      "date": "2025-03-07T15:17:29Z",
+      "likes": 36
+    },
+    {
+      "id": "bc-011",
+      "articleId": "climate-school-strikes",
+      "author": "ClimateEducator",
+      "text": "Jag är gymnasielärare och har sett direkt hur klimatstrejkerna har påverkat mina elever. De har inte bara blivit mer medvetna om klimatfrågor utan också lärt sig om demokratiska processer och sitt eget inflytande. Detta kan ha livslånga positiva effekter på deras samhällsengagemang.",
+      "date": "2025-03-03T17:45:33Z",
+      "likes": 28
+    },
+    {
+      "id": "bc-012",
+      "articleId": "climate-school-strikes",
+      "author": "ParentSupporter",
+      "text": "Min dotter har deltagit i flera klimatstrejker och jag stödjer henne helt. Vissa kritiserar att barn missar skolan, men jag anser att detta är utbildning i praktiken - att stå upp för sin framtid, lära sig om vetenskap och politik, och att organisera sig kollektivt. Dessa färdigheter är ovärderliga.",
+      "date": "2025-03-04T10:08:47Z",
+      "likes": 35
+    },
+    {
+      "id": "bc-013",
+      "articleId": "climate-school-strikes",
+      "author": "PolicyAnalyst",
+      "text": "Det finns faktiskt forskning som visar på konkreta policyförändringar som kan kopplas till klimatstrejker. Till exempel ledde strejkerna 2019 till att flera kommuner i Sverige antog mer ambitiösa klimatmål. Gäller att fortsätta långsiktigt dock - förändring tar tid.",
+      "date": "2025-03-05T13:27:19Z",
+      "likes": 22
+    },
+    {
+      "id": "bc-014",
+      "articleId": "climate-school-strikes",
+      "author": "YouthActivist",
+      "text": "Som en av organisatörerna för klimatstrejker i min stad uppskattar jag den här nyanserade artikeln. Vi möter ofta kritik om att vi bara protesterar utan att erbjuda lösningar, men sanningen är att vi presenterar konkreta krav baserade på vetenskapliga rekommendationer. Dessutom erbjuder vi regelbundet workshops om klimatlösningar.",
+      "date": "2025-03-06T09:49:12Z",
+      "likes": 43
+    },
+    {
+      "id": "bc-015",
+      "articleId": "climate-school-strikes",
+      "author": "EnvironmentalScientist",
+      "text": "Klimatstrejkerna är ett fascinerande exempel på hur gräsrotsrörelser kan påverka global policy. Som klimatforskare ser jag en direkt koppling mellan den ökade medvetenheten som strejkerna skapat och viljan hos beslutsfattare att vidta åtgärder. Dock räcker inte ambition - vi behöver nu se konkret handling.",
+      "date": "2025-03-07T16:33:45Z",
+      "likes": 39
+    },
+    {
+      "id": "bc-016",
+      "articleId": "sharing-economy-future",
+      "author": "SustainabilityConsultant",
+      "text": "Väldigt tidsenlig artikel. Jag arbetar med företag som implementerar cirkulära affärsmodeller och ser ett växande intresse. Det som ofta glöms bort är att övergången till en delningsekonomi kräver nya metriker för framgång - vi behöver utvärdera tjänstekvalitet och resursutnyttjande snarare än enbart försäljningsvolym.",
+      "date": "2025-03-03T19:14:26Z",
+      "likes": 25
+    },
+    {
+      "id": "bc-017",
+      "articleId": "sharing-economy-future",
+      "author": "UrbanPlanner",
+      "text": "Delningsekonomi har enorma implikationer för hur vi designar städer. Med färre personbilar behöver vi mindre parkeringsytor och kan planera för tätare, mer gångvänliga områden. I vårt senaste stadsplaneringsprojekt har vi faktiskt minskat parkeringsytorna med 30% och istället skapat gemensamma ytor och mobility hubs.",
+      "date": "2025-03-04T11:52:38Z",
+      "likes": 32
+    },
+    {
+      "id": "bc-018",
+      "articleId": "sharing-economy-future",
+      "author": "EconomicsThinker",
+      "text": "Bra artikel, men jag skulle vilja se mer diskussion om de ekonomiska övergångsproblemen. När vi går från en ägandeekonomi till en tillgångsekonomi, vad händer med jobb i tillverkningsindustrin? Hur säkerställer vi att värdet som skapas fördelas rättvist? Dessa frågor måste adresseras för att få brett stöd.",
+      "date": "2025-03-05T14:07:59Z",
+      "likes": 19
+    },
+    {
+      "id": "bc-019",
+      "articleId": "sharing-economy-future",
+      "author": "PragmaticConsumer",
+      "text": "Jag har testat flera delningsekonomi-tjänster senaste åren - från bilpooler till klädhyrning. Min erfarenhet är blandad. Bekvämligheten är avgörande - om det tar för lång tid att boka/hämta/lämna så faller konceptet. De mest framgångsrika tjänsterna har investerat mycket i sömlös användarupplevelse.",
+      "date": "2025-03-06T09:35:28Z",
+      "likes": 24
+    },
+    {
+      "id": "bc-020",
+      "articleId": "sharing-economy-future",
+      "author": "FutureTech",
+      "text": "En aspekt som artikeln missar är hur blockchain och smarta kontrakt kan revolutionera delningsekonomin. Med decentraliserad verifiering kan vi skapa peer-to-peer delningsplattformar utan mellanhänder, vilket skulle minska kostnaderna och ge mer makt till användarna. Flera spännande startup-projekt arbetar redan på detta.",
+      "date": "2025-03-07T16:47:12Z",
+      "likes": 31
+    },
+    {
+      "id": "bc-021",
+      "articleId": "melodifestivalen-cultural-impact",
+      "author": "MusicProducer",
+      "text": "Som person i musikbranschen kan jag bekräfta den enorma påverkan Melodifestivalen har på svensk musik. Det är inte bara evenemanget i sig - det är en plattform där nya låtskrivare och producenter kan visa upp sig, och framgångsrika bidrag öppnar dörrar internationellt. Många av våra största musikexporter har kopplingar till tävlingen.",
+      "date": "2025-03-03T20:12:45Z",
+      "likes": 38
+    },
+    {
+      "id": "bc-022",
+      "articleId": "melodifestivalen-cultural-impact",
+      "author": "CulturalAnthropologist",
+      "text": "Det finns få kulturella fenomen i Sverige som förenar så många demografiska grupper som Melodifestivalen. Från forskningsmässigt perspektiv är det fascinerande att observera hur tävlingen förenar familjer och vängrupper i gemensamma ritualer - det är nästan som en modern form av nationell folklore.",
+      "date": "2025-03-04T12:29:37Z",
+      "likes": 26
+    },
+    {
+      "id": "bc-023",
+      "articleId": "melodifestivalen-cultural-impact",
+      "author": "TourismExpert",
+      "text": "Vi ser tydligt effekterna av Melodifestivalen på turismen i värdstäderna. När deltävlingarna kommer till mindre städer ser vi en ökning av hotellbeläggning med 30-40%, och restauranger rapporterar ofta rekordomsättning. Detta ekonomiska lyft är särskilt värdefullt för städer utanför storstadsregionerna.",
+      "date": "2025-03-05T15:16:48Z",
+      "likes": 19
+    },
+    {
+      "id": "bc-024",
+      "articleId": "melodifestivalen-cultural-impact",
+      "author": "InternationalFan",
+      "text": "Som utländsk Melodifestival-fan (ja, vi finns!) vill jag säga att tävlingen representerar Sverige perfekt internationellt - kreativ, inkluderande och högkvalitativ. Jag reser till Sverige varje år för finalen, och många i vårt internationella fanforum gör likadant. Detta är kulturell mjukmakt i praktiken!",
+      "date": "2025-03-06T09:53:21Z",
+      "likes": 44
+    },
+    {
+      "id": "bc-025",
+      "articleId": "melodifestivalen-cultural-impact",
+      "author": "MusicHistorian",
+      "text": "Bra artikel! Det som också är intressant är hur Melodifestivalen genom åren har spridit olika musikstilar till en bredare publik. På 70-talet introducerade den svensk folkmusik, på 90-talet dansband, och på senare år har den hjälpt till att normalisera hiphop och elektronisk musik för äldre generationer. Mycket få musikevenemang har haft samma kulturella genomslagskraft.",
+      "date": "2025-03-07T17:08:39Z",
+      "likes": 35
+    }
+  ]
+}
