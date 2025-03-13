@@ -1,0 +1,439 @@
+/* 
+   Enhanced RedPill CSS for Truth Matrix
+   Improves styling and readability while reducing dependency on images
+*/
+
+/* ---- THEME ENHANCEMENTS ---- */
+body {
+    background-color: #0f0f0f;
+    color: #d5d5d5;
+    background-image: 
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.85)),
+        radial-gradient(circle at 10% 20%, rgba(120, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 80%),
+        radial-gradient(circle at 90% 80%, rgba(120, 0, 0, 0.07) 0%, rgba(0, 0, 0, 0) 70%);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Matrix-inspired background animation */
+.matrix-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.03;
+    pointer-events: none;
+}
+
+/* Navbar improvements */
+.navbar {
+    background-color: rgba(10, 10, 10, 0.95);
+    border-bottom: 1px solid rgba(120, 0, 0, 0.15);
+    box-shadow: 0 2px 10px rgba(120, 0, 0, 0.2);
+}
+
+.logo-container h1,
+nav ul li a {
+    color: #f1f1f1;
+    text-shadow: 0 0 5px rgba(120, 0, 0, 0.3);
+}
+
+/* Alert banner improvements */
+.alert-banner {
+    background-color: rgba(120, 0, 0, 0.7);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.alert-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+        to right, 
+        rgba(255, 255, 255, 0) 0%, 
+        rgba(255, 255, 255, 0.05) 50%, 
+        rgba(255, 255, 255, 0) 100%
+    );
+    animation: shine 3s infinite;
+    z-index: 1;
+}
+
+@keyframes shine {
+    0% {
+        left: -100%;
+    }
+    20% {
+        left: 100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+/* ---- ARTICLE ENHANCEMENTS ---- */
+.article {
+    background-color: rgba(15, 15, 15, 0.9);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-xl);
+    margin-bottom: var(--spacing-xl);
+    box-shadow: 0 5px 25px rgba(120, 0, 0, 0.25);
+    position: relative;
+    overflow: hidden;
+    border-top: 3px solid var(--red-pill-secondary);
+}
+
+.article::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 0h2v1H1V0zm4 0h2v1H5V0zm4 0h2v1H9V0zm4 0h2v1h-2V0zm4 0h2v1h-2V0zM0 1h1v2H0V1zm5 0h1v2H5V1zm5 0h1v2h-1V1zm5 0h1v2h-1V1zm5 0h1v2h-1V1zM0 5h1v2H0V5zm5 0h1v2H5V5zm5 0h1v2h-1V5zm5 0h1v2h-1V5zm5 0h1v2h-1V5zM0 9h1v2H0V9zm5 0h1v2H5V9zm5 0h1v2h-1V9zm5 0h1v2h-1V9zm5 0h1v2h-1V9zM0 13h1v2H0v-2zm5 0h1v2H5v-2zm5 0h1v2h-1v-2zm5 0h1v2h-1v-2zm5 0h1v2h-1v-2zM0 17h1v2H0v-2zm5 0h1v2H5v-2zm5 0h1v2h-1v-2zm5 0h1v2h-1v-2zm5 0h1v2h-1v-2z' fill='%23780000' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
+    opacity: 0.5;
+}
+
+.article-title {
+    font-size: 2.2rem;
+    margin-bottom: var(--spacing-lg);
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.article-metadata {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+    font-size: 0.9rem;
+    color: #aaa;
+    position: relative;
+}
+
+.article-metadata span {
+    color: #d5d5d5;
+    font-weight: 500;
+}
+
+/* Replace image with thematic element if image fails to load */
+.article-image-container {
+    margin: var(--spacing-lg) 0;
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    position: relative;
+    min-height: 250px;
+    background-color: rgba(30, 30, 30, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.article-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform var(--transition-slow);
+}
+
+.article-image-container::before {
+    content: attr(data-alt);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+    color: #aaa;
+    padding: var(--spacing-lg);
+    text-align: center;
+    z-index: 0;
+    opacity: 0;
+}
+
+.article-image-container.no-image::before {
+    opacity: 1;
+}
+
+.article-image-container.no-image .article-image {
+    opacity: 0;
+}
+
+.image-caption {
+    background-color: rgba(10, 10, 10, 0.8);
+    color: #d5d5d5;
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: 0.9rem;
+    font-style: italic;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.article-introduction {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    margin-bottom: var(--spacing-xl);
+    color: #e0e0e0;
+    border-left: 3px solid var(--red-pill-secondary);
+    padding-left: var(--spacing-md);
+    position: relative;
+}
+
+.article-section h3 {
+    color: var(--red-pill-accent);
+    margin-bottom: var(--spacing-md);
+    position: relative;
+    display: inline-block;
+}
+
+.article-section p {
+    line-height: 1.8;
+    color: #d5d5d5;
+}
+
+/* ---- COMMENTS SECTION IMPROVEMENTS ---- */
+.comments-container {
+    max-height: 500px;
+    overflow-y: auto;
+    padding-right: var(--spacing-md);
+    scrollbar-width: thin;
+    scrollbar-color: var(--red-pill-secondary) rgba(30, 30, 30, 0.5);
+}
+
+.comment {
+    background-color: rgba(30, 30, 30, 0.8);
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+    border-left: 3px solid var(--red-pill-primary);
+    position: relative;
+}
+
+.comment-author {
+    font-weight: 600;
+    margin-bottom: var(--spacing-sm);
+    color: #e0e0e0;
+}
+
+.comment-content {
+    color: #c5c5c5;
+    line-height: 1.6;
+}
+
+.comment-date {
+    font-size: 0.8rem;
+    color: #999;
+}
+
+.comment-actions button {
+    color: #aaa;
+}
+
+.comment-actions button:hover {
+    color: var(--red-pill-accent);
+}
+
+/* ---- READ MORE BUTTON FIX ---- */
+.collapse-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.8s ease;
+}
+
+.article.expanded .collapse-content {
+    max-height: 5000px; /* A large value to accommodate any content height */
+}
+
+.expand-button {
+    display: block;
+    width: 100%;
+    background-color: rgba(120, 0, 0, 0.15);
+    color: #d5d5d5;
+    border: 1px solid rgba(120, 0, 0, 0.3);
+    padding: var(--spacing-md);
+    text-align: center;
+    cursor: pointer;
+    border-radius: var(--border-radius-md);
+    margin: var(--spacing-lg) 0;
+    font-weight: 500;
+    transition: all var(--transition-fast);
+    position: relative;
+    z-index: 2;
+}
+
+.expand-button:hover {
+    background-color: rgba(120, 0, 0, 0.3);
+    transform: translateY(-1px);
+}
+
+.expand-button i {
+    transition: transform var(--transition-medium);
+}
+
+.article.expanded .expand-button i {
+    transform: rotate(180deg);
+}
+
+/* ---- RELATED ARTICLES ENHANCEMENTS ---- */
+.related-article {
+    background-color: rgba(25, 25, 25, 0.9);
+    transition: transform var(--transition-medium), box-shadow var(--transition-medium);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    border-left: 2px solid var(--red-pill-secondary);
+}
+
+.related-article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(120, 0, 0, 0.3);
+}
+
+/* Matrix-inspired falling code animation for background */
+.matrix-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.matrix-animation span {
+    position: absolute;
+    width: 1px;
+    top: -100px;
+    background: linear-gradient(to bottom, rgba(120, 0, 0, 0), rgba(120, 0, 0, 0.5), rgba(120, 0, 0, 0));
+    color: rgba(120, 0, 0, 0.7);
+    filter: blur(1px);
+    font-family: monospace;
+}
+
+/* ---- SCROLLBAR STYLING ---- */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(30, 30, 30, 0.5);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(120, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--red-pill-secondary);
+}
+
+/* ---- EDITOR PLACEHOLDER ---- */
+.placeholder-content {
+    position: relative;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    background-color: rgba(30, 30, 30, 0.7);
+    overflow: hidden;
+    border-radius: var(--border-radius-md);
+}
+
+.placeholder-content::after {
+    content: attr(data-placeholder);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #aaa;
+    font-style: italic;
+    text-align: center;
+}
+
+/* ---- REACTION BUTTONS ENHANCEMENT ---- */
+.reaction-button {
+    position: relative;
+    overflow: hidden;
+}
+
+.reaction-button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    background: rgba(120, 0, 0, 0.5);
+    opacity: 0;
+    border-radius: 100%;
+    transform: scale(1, 1) translate(-50%);
+    transform-origin: 50% 50%;
+}
+
+.reaction-button:active::after {
+    opacity: 0.6;
+    animation: ripple 0.6s linear;
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(0, 0);
+        opacity: 0.6;
+    }
+    100% {
+        transform: scale(20, 20);
+        opacity: 0;
+    }
+}
+
+/* ---- REDPILL-SPECIFIC TYPOGRAPHY ---- */
+.article strong, .article em, .comment strong, .comment em {
+    color: #ff3333;
+    font-weight: bold;
+}
+
+.truth-highlight {
+    background: linear-gradient(to right, rgba(120, 0, 0, 0), rgba(120, 0, 0, 0.2), rgba(120, 0, 0, 0));
+    padding: 2px 0;
+}
+
+/* Blinking cursor effect */
+.truth-cursor {
+    display: inline-block;
+    width: 8px;
+    height: 15px;
+    background-color: var(--red-pill-secondary);
+    animation: blink 1s step-end infinite;
+    vertical-align: middle;
+    margin-left: 4px;
+}
+
+@keyframes blink {
+    from, to { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* ---- DARK MODE OPTIMIZATION ---- */
+@media (prefers-color-scheme: dark) {
+    .article-section p {
+        color: #d5d5d5;
+    }
+    
+    .comment-content {
+        color: #c5c5c5;
+    }
+}
