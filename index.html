@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truth Matrix - Välj din verklighet</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/landing.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="overlay"></div>
+    
+    <header class="navbar">
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Truth Matrix Logo" class="logo">
+            <h1>Truth Matrix</h1>
+        </div>
+        <div id="countdown" class="countdown">00:00:00:00</div>
+        <nav>
+            <ul>
+                <li><a href="about.html">Om oss</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="hero">
+        <div class="content">
+            <h2 class="tagline">Verkligheten väntar på ditt val</h2>
+            <p class="description">Välj vilken väg du vill ta: Den bekväma illusionen eller den obekväma sanningen.</p>
+            <div class="matrix-quote">
+                <blockquote>
+                    "Du tar det blå pillret, historien tar slut, du vaknar i din säng och tror vad du vill tro. Du tar det röda pillret, du stannar i Underlandet, och jag visar dig hur djupt kaninhålet går."
+                </blockquote>
+                <cite>— Morpheus</cite>
+            </div>
+            <div class="choice-container">
+                <div class="choice red-pill">
+                    <div class="pill-image">
+                        <img src="images/red-pill.png" alt="Röd pill">
+                    </div>
+                    <h3>Röd Pill</h3>
+                    <p>Upptäck de dolda sanningarna som maktstrukturer inte vill att du ska känna till</p>
+                    <a href="#" class="choice-button" id="red-pill-button">Välj röd pill</a>
+                </div>
+                <span class="divider">eller</span>
+                <div class="choice blue-pill">
+                    <div class="pill-image">
+                        <img src="images/blue-pill.png" alt="Blå pill">
+                    </div>
+                    <h3>Blå Pill</h3>
+                    <p>Fortsätt leva i komfort med etablerade sanningar och faktabaserade nyheter</p>
+                    <a href="#" class="choice-button" id="blue-pill-button">Välj blå pill</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="red-pill-modal" class="modal">
+        <div class="modal-content">
+            <h2>Är du redo att se verkligheten?</h2>
+            <p>Du är på väg att utforska information som utmanar den etablerade världsbilden. Denna kunskap kan förändra ditt sätt att se på världen för alltid.</p>
+            <p>Är du säker på att du vill fortsätta?</p>
+            <div class="modal-buttons">
+                <a href="redpill.html" class="modal-button confirm">Jag är redo</a>
+                <button class="modal-button cancel">Gå tillbaka</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="blue-pill-modal" class="modal">
+        <div class="modal-content">
+            <h2>Vill du läsa helt vanliga nyheter?</h2>
+            <p>Du är på väg att läsa vanliga dagliga nyheter utskickade till massan. Detta är för dig som vill leva i förnekelse och inte vill veta den mörka sanningen bakom vår värld.</p>
+            <p>Är du säker på att du vill fortsätta?</p>
+            <div class="modal-buttons">
+                <a href="bluepill.html" class="modal-button confirm">Fortsätt</a>
+                <button class="modal-button cancel">Gå tillbaka</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Truth Matrix | <a href="about.html">Om oss</a></p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/countdown.js"></script>
+</body>
+</html>
