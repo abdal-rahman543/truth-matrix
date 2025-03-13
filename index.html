@@ -5,72 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Truth Matrix - Välj din verklighet</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/landing.css">
+    <link rel="stylesheet" href="css/enhanced-landing.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        /* Tillfälliga stilar för att ersätta bilder */
-        .overlay {
-            background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%);
-            background-size: cover;
-        }
-
-        .logo-container {
-            display: flex;
-            align-items: center;
-        }
-
-        .logo-text {
-            font-size: 1.8rem;
-            margin-right: var(--spacing-sm);
-            color: var(--primary-color);
-        }
-
-        .pill-icon {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 24px;
-            color: white;
-        }
-
-        .red-pill .pill-icon {
-            background: linear-gradient(135deg, var(--red-pill-gradient-start), var(--red-pill-gradient-end));
-        }
-
-        .blue-pill .pill-icon {
-            background: linear-gradient(135deg, var(--blue-pill-gradient-start), var(--blue-pill-gradient-end));
-        }
-        
-        /* Viktigt: gör knapparna att se ut som länkar men behåller knappfunktionaliteten */
-        .choice-button {
-            border: none;
-            cursor: pointer;
-            font-family: var(--body-font);
-            display: inline-block;
-            padding: var(--spacing-md) var(--spacing-xl);
-            border-radius: 30px;
-            font-weight: 600;
-            transition: all var(--transition-fast);
-            text-align: center;
-            width: 100%;
-        }
-    </style>
 </head>
 <body>
+    <div class="particles-container" id="particles-js"></div>
     <div class="overlay"></div>
     
     <header class="navbar">
         <div class="logo-container">
-            <i class="fas fa-pills logo-text"></i>
+            <div class="logo-icon">
+                <i class="fas fa-pills"></i>
+            </div>
             <h1>Truth Matrix</h1>
         </div>
-        <div id="countdown" class="countdown">00:00:00:00</div>
+        <div id="countdown" class="countdown">
+            <div class="countdown-item">
+                <span id="countdown-days">00</span>
+                <span class="countdown-label">d</span>
+            </div>
+            <div class="countdown-item">
+                <span id="countdown-hours">00</span>
+                <span class="countdown-label">h</span>
+            </div>
+            <div class="countdown-item">
+                <span id="countdown-minutes">00</span>
+                <span class="countdown-label">m</span>
+            </div>
+            <div class="countdown-item">
+                <span id="countdown-seconds">00</span>
+                <span class="countdown-label">s</span>
+            </div>
+        </div>
         <nav>
             <ul>
                 <li><a href="about.html">Om oss</a></li>
@@ -82,29 +51,39 @@
         <div class="content">
             <h2 class="tagline">Verkligheten väntar på ditt val</h2>
             <p class="description">Välj vilken väg du vill ta: Den bekväma illusionen eller den obekväma sanningen.</p>
+            
             <div class="matrix-quote">
                 <blockquote>
                     "Du tar det blå pillret, historien tar slut, du vaknar i din säng och tror vad du vill tro. Du tar det röda pillret, du stannar i Underlandet, och jag visar dig hur djupt kaninhålet går."
                 </blockquote>
                 <cite>— Morpheus</cite>
             </div>
+            
             <div class="choice-container">
                 <div class="choice red-pill">
                     <div class="pill-image">
-                        <div class="pill-icon"><i class="fas fa-capsules"></i></div>
+                        <div class="pill-icon">
+                            <i class="fas fa-capsules"></i>
+                        </div>
                     </div>
                     <h3>Röd Pill</h3>
                     <p>Upptäck de dolda sanningarna som maktstrukturer inte vill att du ska känna till</p>
                     <a href="redpill.html" class="choice-button">Välj röd pill</a>
                 </div>
-                <span class="divider">eller</span>
+                
+                <div class="choice-divider">
+                    <span>eller</span>
+                </div>
+                
                 <div class="choice blue-pill">
                     <div class="pill-image">
-                        <div class="pill-icon"><i class="fas fa-capsules"></i></div>
+                        <div class="pill-icon">
+                            <i class="fas fa-capsules"></i>
+                        </div>
                     </div>
                     <h3>Blå Pill</h3>
                     <p>Fortsätt leva i komfort med etablerade sanningar och faktabaserade nyheter</p>
-                    <a href="bluepill.html" class="choice-button">Välj röd pill</a>
+                    <a href="bluepill.html" class="choice-button">Välj blå pill</a>
                 </div>
             </div>
         </div>
@@ -116,7 +95,7 @@
             <p>Du är på väg att utforska information som utmanar den etablerade världsbilden. Denna kunskap kan förändra ditt sätt att se på världen för alltid.</p>
             <p>Är du säker på att du vill fortsätta?</p>
             <div class="modal-buttons">
-                <a href="/redpill.html" class="modal-button confirm">Jag är redo</a>
+                <a href="redpill.html" class="modal-button confirm">Jag är redo</a>
                 <button class="modal-button cancel">Gå tillbaka</button>
             </div>
         </div>
@@ -128,17 +107,29 @@
             <p>Du är på väg att läsa vanliga dagliga nyheter utskickade till massan. Detta är för dig som vill leva i förnekelse och inte vill veta den mörka sanningen bakom vår värld.</p>
             <p>Är du säker på att du vill fortsätta?</p>
             <div class="modal-buttons">
-                <a href="/bluepill.html" class="modal-button confirm">Fortsätt</a>
+                <a href="bluepill.html" class="modal-button confirm">Fortsätt</a>
                 <button class="modal-button cancel">Gå tillbaka</button>
             </div>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2025 Truth Matrix | <a href="about.html">Om oss</a></p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <p>&copy; 2025 Truth Matrix</p>
+            </div>
+            <div class="footer-section">
+                <ul class="footer-links">
+                    <li><a href="about.html">Om oss</a></li>
+                    <li><a href="redpill.html">Röd Pill</a></li>
+                    <li><a href="bluepill.html">Blå Pill</a></li>
+                </ul>
+            </div>
+        </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/countdown.js"></script>
+    <script src="js/enhanced-landing.js"></script>
 </body>
 </html>
