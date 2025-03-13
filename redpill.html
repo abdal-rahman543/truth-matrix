@@ -183,12 +183,17 @@
         </div>
     </footer>
 
+    <!-- Load all scripts -->
     <script src="js/main.js"></script>
     <script src="js/articles.js"></script>
     <script src="js/redpill.js"></script>
     <script src="js/comments.js"></script>
     <script src="js/comments-fix.js"></script>
     <script src="js/search.js"></script>
+    
+    <!-- Load the fix script last to ensure it overrides any other functionality -->
+    <script src="js/expand-fix.js"></script>
+    
     <script>
         // Matrix animation effect
         document.addEventListener('DOMContentLoaded', function() {
@@ -208,21 +213,7 @@
                 matrixAnimation.appendChild(span);
             }
             
-            // Fix for the "Read more" button functionality
-            const expandButton = document.getElementById('expand-button');
-            const article = document.getElementById('current-article');
-            
-            if (expandButton && article) {
-                expandButton.addEventListener('click', function() {
-                    article.classList.toggle('expanded');
-                    
-                    if (article.classList.contains('expanded')) {
-                        expandButton.innerHTML = 'Visa mindre <i class="fas fa-angle-up"></i>';
-                    } else {
-                        expandButton.innerHTML = 'Läs mer <i class="fas fa-angle-down"></i>';
-                    }
-                });
-            }
+            // We've removed the expand button handler from here as it's now in expand-fix.js
         });
     </script>
 </body>
